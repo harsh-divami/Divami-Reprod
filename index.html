@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Fella Home Replica</title>
+    <meta
+      name="description"
+      content="A local recreation of the Good Fella homepage with matching typography, motion, color rhythm, responsive behavior, and interaction states."
+    />
+    <link rel="preconnect" href="https://use.typekit.net" />
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/tdy7azi.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-accent-theme="orange">
+    <div class="loader" aria-hidden="true">
+      <div class="loader-track">
+        <span class="loader-word">LOADING</span>
+        <span class="loader-word">LOADING</span>
+      </div>
+    </div>
+
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="shell site-header__inner">
+        <a class="wordmark" href="#top" aria-label="Good Fella - Home">
+          <div class="wordmark__stack">
+            <div class="wordmark__row">
+              <svg
+                viewBox="0 0 1616.59 529.18"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Good"
+                role="img"
+              >
+                <path
+                  d="M212.88,248.5c-1.92-1.89-3.17-4.57-3.17-8.06V90.87c0-15.24,23.65-15.22,23.65,0v137.74h176.04V13c0-9.05-4.51-13-12.95-13H123.9C77.16,0,46.22,31.1,46.22,78.02l-.03,373.14c0,46.93,30.97,78.02,77.71,78.02h274.81c6.19,0,10.7-4.52,10.7-10.74V252.27H221.51c-3.85,0-6.72-1.51-8.63-3.77ZM233.34,311.59v113.56c0,15.24-23.65,15.22-23.65,0V311.59c0-15.24,23.65-15.22,23.65,0Z"
+                ></path>
+                <path
+                  d="M718.71,0H510.92c-46.74,0-77.71,31.1-77.71,78.02v373.14c0,46.93,30.97,78.02,77.71,78.02h207.79c46.74,0,77.71-31.1,77.71-78.02V78.02C796.42,31.1,765.45,0,718.71,0ZM619.12,424.77c0,15.24-23.65,15.22-23.65,0V106.7c0-15.24,23.65-15.22,23.65,0v318.07Z"
+                ></path>
+                <path
+                  d="M1183.34,78.02c0-46.93-30.97-78.02-77.71-78.02H897.84c-46.74,0-77.71,31.1-77.71,78.02v373.14c0,46.93,30.97,78.02,77.71,78.02h275.57c7.58,0,9.94-4.53,9.94-10.74V78.02ZM1012.47,425.67c0,15.24-23.65,15.22-23.65,0V105.34c0-15.24,23.65-15.22,23.65,0v320.33Z"
+                ></path>
+                <path
+                  d="M1217.67,529.18h274.81c46.74,0,77.71-31.1,77.71-78.02V78.02c0-46.93-30.97-78.02-77.71-78.02h-274.81c-6.19,0-10.7,4.52-10.7,10.74v507.7c0,6.22,4.51,10.74,10.7,10.74ZM1368.17,105.34c0-15.24,23.65-15.22,23.65,0v320.1c0,15.24-23.65,15.22-23.65,0V105.34Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="wordmark__row">
+              <svg
+                viewBox="0 0 1616.59 556.07"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Fella"
+                role="img"
+              >
+                <path
+                  d="M232.92,218.94c-15.24,0-15.22-24.24,0-24.24h176.47l-.02-171.91c0-8.45-4.51-12.95-12.95-12.95H121.13c-42.8,0-74.97,34.91-74.97,77.71v438.68c0,6.19,5.25,10.7,12.92,10.7,86.01,0,155.36-56.99,164.69-132.81h173.34c8.96,0,12.31-6.8,12.31-14.39l-.02-170.79h-176.47Z"
+                ></path>
+                <path
+                  d="M613.38,218.08v63.14c0,15.24-23.65,15.22-23.65,0V206.26c0-6.41,5.43-12.43,11.83-12.43h194.3V86.57c0-46.74-30.97-77.71-77.71-77.71H510.92c-46.74,0-77.71,30.97-77.71,77.71v238.77c0,46.74,30.97,77.71,77.71,77.71h207.23c46.74,0,77.71-30.97,77.71-77.71V218.1H613.38ZM589.73,95.94c0-15.24,23.65-15.22,23.65,0v50.27c0,15.24-23.65,15.22-23.65,0V95.94Z"
+                ></path>
+                <path
+                  d="M976.42,8.84h-76.36c-55.23,0-80.53,24.42-80.53,77.15v304.09c0,8.45,4.51,12.95,12.95,12.95h143.94c8.45,0,12.95-4.51,12.95-12.95V8.84c0-8.45-4.51-12.95-12.95-12.95Z"
+                ></path>
+                <path
+                  d="M1170.15,8.84h-144.09c-8.45,0-12.95,4.51-12.95,12.95v368.29c0,8.45,4.51,12.95,12.95,12.95h76.52c55.23,0,80.53-24.42,80.53-77.15V8.84c0-8.45-4.51-12.95-12.95-12.95Z"
+                ></path>
+                <path
+                  d="M1491.91,8.84h-271.43c-9.01,0-13.52,4.51-13.52,13.52v171.15h173.6V95.46c0-15.24,23.65-15.22,23.65,0v109.2c0,6.41-5.43,13.18-11.83,13.18h-185.43v107.49c0,46.74,30.97,77.71,77.71,77.71h106.99c15.77,0,25.46-13.52,27.15-29.28v-71.66c.56-6.19,6.22-10.14,12.42-10.14,5.07,0,11.86,4.66,11.29,9.72l-.06,88.41c0,9,2.82,12.95,11.26,12.95h102.94c8.45,0,13.76-4.51,13.76-12.95V86.55c0-46.74-31.78-77.71-78.52-77.71Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <div class="site-header__actions">
+          <button
+            class="menu-toggle mono"
+            id="menuToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menuPanel"
+          >
+            <span>Menu</span>
+            <span>Close</span>
+          </button>
+          <a class="cta cta--mono cta--ghost header-cta" href="#contact">
+            <span class="cta__label">
+              <span>Let's work together</span>
+              <span>LET'S WORK TOGETHER</span>
+            </span>
+            <svg class="cta__icon" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path
+                d="M6 1v10M1 6h10"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="square"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu-panel" id="menuPanel" aria-hidden="true">
+      <div class="shell menu-panel__inner">
+        <nav class="menu-panel__nav" aria-label="Main navigation">
+          <a href="#top">Home</a>
+          <a href="#featured">Work</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="menu-panel__meta">
+          <div>
+            <p class="mono">Contact</p>
+            <a href="mailto:contact@good-fella.com">contact@good-fella.com</a>
+          </div>
+          <div>
+            <a href="mailto:julian@good-fella.com">Julian: julian@good-fella.com</a>
+            <a href="mailto:adrian@good-fella.com">Adrian: adrian@good-fella.com</a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/good_fella_studio/" target="_blank" rel="noreferrer"
+              >Instagram: @good_fella_studio</a
+            >
+            <a href="https://www.linkedin.com/company/good-fella-studio/" target="_blank" rel="noreferrer"
+              >LinkedIn: @good-fella-studio</a
+            >
+            <a href="https://github.com/GoodFellaStudio" target="_blank" rel="noreferrer"
+              >Github: @GoodFellaStudio</a
+            >
+          </div>
+          <p class="mono">Working Globally</p>
+          <div class="waitlist-badge">
+            <p class="mono">Accepting Projects. Join the waitlist.</p>
+            <p class="mono">Only 3 spots left</p>
+          </div>
+        </div>
+
+        <div class="menu-panel__cards">
+          <article class="menu-card">
+            <a href="#contact">
+              <img
+                src="https://cdn.sanity.io/images/degpnzrx/production/c6b897f2873c4b8c2d6f395cf6a5e0e5ed49d9ef-1600x2400.heif?w=1440&h=2160&q=90&auto=format"
+                alt="Adrian and Julian dressed in black sitting on the floor against a white wall in a minimalist studio setting"
+              />
+            </a>
+            <p class="mono">About the Studio</p>
+          </article>
+          <article class="menu-card">
+            <a href="#featured">
+              <img
+                src="https://cdn.sanity.io/images/degpnzrx/production/5d302071b3ef530f3de3528f9f1d3a9678e0643c-3000x2250.jpg?w=1440&h=1080&q=90&auto=format"
+                alt="WKNDHRS"
+              />
+            </a>
+            <p class="mono">Featured Project</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero section-dark">
+        <div class="hero__grain"></div>
+        <div class="shell hero__inner">
+          <div class="hero__copy" data-reveal>
+            <h1 class="hero-title">
+              <span class="reveal-line"><span>Your Frontend team.</span></span>
+              <span class="reveal-line"><span>One monthly fee.</span></span>
+            </h1>
+
+            <p class="hero__lede">
+              Good Fella is a frontend development studio that works as your dedicated
+              team. One monthly fee, no contracts, and no hourly tracking.
+            </p>
+
+            <div class="hero__actions">
+              <a class="cta cta--mono" href="#pricing">
+                <span class="cta__label">
+                  <span>See our pricing</span>
+                  <span>SEE OUR PRICING</span>
+                </span>
+                <svg class="cta__icon" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path
+                    d="M6 1v10M1 6h10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="square"
+                  ></path>
+                </svg>
+              </a>
+              <a class="text-link" href="#featured">View our work</a>
+            </div>
+          </div>
+
+          <div class="hero__brands" data-reveal>
+            <p class="mono hero__brands-copy">We have worked with brands that care about craft</p>
+            <div class="brand-strip">
+              <span class="brand-logo" aria-label="Coca Cola Logo" role="img">
+                <svg width="82" height="27" viewBox="0 0 82 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M31.3625 23.3282C28.3235 21.3706 24.1992 21.0271 17.5479 22.8724C10.4572 24.5387 8.09299 25.6069 4.98817 23.4626C3.79537 22.4092 3.36772 20.7132 3.68706 18.2703C4.42771 14.2878 6.42926 10.4553 9.98459 6.2041C11.969 3.99266 13.8099 2.09483 16.2405 1.33274C18.1034 0.854657 17.9292 2.31871 17.7038 2.52809C17.466 2.52809 17.0664 2.56556 16.7576 2.76708C16.5069 2.96146 15.819 3.5891 15.782 4.43337C15.7287 5.72581 17.0662 5.45681 17.6431 4.74719C18.2649 3.94753 19.1839 2.4162 18.461 0.989006C18.158 0.481013 17.6345 0.12993 16.9845 0.0103845C14.7588 -0.116818 12.686 0.944189 10.7728 2.11719C6.58903 5.02355 3.24225 9.05074 1.34851 13.4589C0.256776 16.1186 -0.730625 19.9286 0.749354 23.0295C1.89438 25.1811 4.27131 26.324 7.10723 26.085C9.09622 25.8761 11.5013 25.2332 13.1189 24.8451C14.7366 24.4562 23.0168 21.61 25.7375 26.5638C25.7375 26.5638 26.6422 24.8076 28.9031 24.7701C30.762 24.5986 33.4436 25.3082 35.3964 26.7425C34.7458 25.7641 32.9012 24.3221 31.3625 23.3282Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M18.392 6.70392C16.8433 5.68783 13.7306 7.63037 11.2375 10.9624C8.95766 13.9513 7.97322 17.4251 9.04464 19.0314C10.6382 20.9216 13.5969 18.1722 14.855 16.7006L15.0173 16.5286C15.8729 15.6096 16.5339 14.5038 17.1738 13.4427C17.1738 13.4427 17.7618 12.4714 17.7899 12.4265C18.1533 12.3595 18.591 12.2549 19.0843 12.1129C19.0773 12.1351 17.197 15.2956 17.3889 16.8643C17.4486 17.3429 17.403 19.0911 19.1099 19.6215C21.3848 20.0028 23.2014 18.2393 24.804 16.6703C24.804 16.6703 25.077 16.4091 25.2315 16.2599C25.1924 16.4163 25.1415 16.6251 25.1415 16.6251C24.4754 18.9413 25.3732 19.4273 25.9348 19.6066C27.632 20.1001 29.6596 17.6343 29.6662 17.6343C29.6136 18.411 29.4599 19.0535 30.2787 19.5691C31.0514 19.8458 31.8335 19.424 32.428 19.028C34.5693 17.5189 36.2944 15.1568 37.6877 13.1151H36.799C36.7884 13.1151 34.6059 16.2786 33.1886 16.9662C33.1863 16.9662 32.9284 17.0986 32.7798 16.9938C32.5958 16.8369 32.6684 16.5105 32.782 16.2794C32.7891 16.2644 38.2543 6.78559 38.2543 6.78559H35.6739C35.6739 6.78559 35.3921 7.24162 35.3691 7.27153C35.3518 7.25663 35.3104 7.17822 35.2818 7.14065C33.6831 4.92921 30.0627 8.3308 27.3371 12.2755C26.2877 13.7923 24.9517 15.5002 23.5663 16.7329C23.5663 16.7329 21.5139 18.6142 20.6371 17.2625C20.3165 16.6946 20.4152 15.8643 20.596 15.3191C21.617 12.4126 23.3762 9.77495 25.3783 8.18349C25.9434 7.74298 26.5577 7.61557 26.8625 7.80239C27.153 7.97451 27.1999 8.40002 27.0161 8.69148C26.5499 8.67658 26.1762 8.81828 25.8726 9.1321C25.2744 9.75974 25.0665 10.365 25.2567 10.9329C26.1807 12.2478 28.0235 9.64775 27.9344 8.06384C27.9025 7.49592 27.5997 6.95812 27.1474 6.69636C26.4735 6.29311 25.4455 6.39755 24.7802 6.71903C23.8894 7.0551 22.4797 8.228 21.6568 9.13965C20.6208 10.2829 18.8439 11.5529 18.2884 11.4107C18.47 10.925 19.9708 7.85436 18.392 6.70392ZM30.8326 11.2465C31.3346 10.5517 32.7956 8.69128 33.1517 8.37756C34.3496 7.3237 34.8284 7.78738 34.8699 8.11591C33.7519 10.1182 32.4324 12.412 31.1918 14.4742C31.1944 14.4668 30.8036 15.0644 30.8036 15.0644C30.2557 15.9009 29.704 16.6182 28.8041 17.1187C28.6758 17.1564 28.4642 17.1714 28.3235 17.0663C28.154 16.9542 28.0871 16.7674 28.1062 16.5731C28.1602 15.9308 28.8142 13.9662 30.8326 11.2465ZM16.7949 12.4493C16.7949 12.4493 16.7723 12.5167 16.7613 12.5388C16.7585 12.5388 15.6362 14.369 15.6362 14.369C14.9589 15.2732 14.1133 16.4092 13.0563 16.9543C12.743 17.0589 12.3098 17.1263 12.0891 16.8501C11.6213 16.2896 11.8624 15.5125 12.0583 14.8851L12.1277 14.6609C12.6894 13.1369 13.5805 11.7918 14.4481 10.5441C14.4589 10.5367 14.4832 10.5293 14.492 10.5293C14.4941 10.5367 14.4976 10.5367 14.499 10.5517C15.0434 11.5975 16.064 12.083 16.8274 12.3075C16.832 12.3075 16.837 12.3149 16.837 12.3299C16.8371 12.3522 16.8246 12.3823 16.7949 12.4493ZM17.8581 10.2903C17.853 10.3052 17.3582 11.4408 17.3582 11.4408C17.2867 11.5006 17.1735 11.4707 17.0439 11.4408L16.8218 11.4033C16.1242 11.1867 15.598 10.7235 15.4358 10.1706C15.2121 9.09473 16.1312 8.25046 16.5361 7.94429C16.9247 7.67509 17.5287 7.53318 17.8795 7.80974C18.0958 8.06384 18.1778 8.39246 18.1778 8.7513C18.1779 9.23674 18.028 9.78209 17.8581 10.2903ZM50.4794 13.7567C50.2306 13.2189 49.64 12.8752 49.0105 12.9124C46.9664 13.0994 44.967 14.7804 43.9171 17.1934C43.3662 18.4338 43.0656 19.4572 42.8684 21.086C43.5041 20.354 44.8007 19.1512 46.272 18.4936C46.272 18.4936 46.4722 16.9322 47.493 15.5424C47.8793 14.967 48.6524 14.0406 49.5204 14.2871C50.2789 14.5412 50.0123 16.6407 49.0043 18.6725C48.2584 20.167 47.1171 21.6616 45.9622 22.6924C44.9412 23.559 43.4306 24.605 42.109 23.7982C41.2766 23.3054 40.852 22.274 40.9416 20.9442C41.3393 17.1713 43.0569 13.9585 45.5147 10.2976C48.0489 6.89819 50.8425 3.40911 54.6058 1.54844C55.3734 1.16 56.0842 1.07036 56.6987 1.30946C56.6987 1.30946 53.166 3.252 51.4821 6.84582C51.0537 7.75747 50.4579 8.98989 51.0579 10.0808C51.3714 10.6485 51.928 10.6934 52.3762 10.6635C54.4404 10.1852 55.774 8.25771 56.8636 6.49464C57.4953 5.15728 58.0568 3.82737 58.0568 2.348C58.0568 2.16874 58.0475 1.92975 58.0324 1.75027C59.0184 1.22748 61.0407 2.15373 61.0407 2.15373C62.6209 2.67693 65.9857 5.25467 67.1207 5.74755C67.6743 5.10511 68.5841 4.13394 69.0965 3.6482L68.3549 3.19238C67.1676 2.46765 65.9126 1.78019 64.6774 1.10038C61.8721 -0.431053 59.5886 0.10675 58.4265 0.525211C57.9698 0.689471 57.5524 0.831477 57.5524 0.831477C56.69 -0.109882 55.2755 -0.0204526 54.2332 0.233748C50.4852 1.30956 47.0053 3.93191 43.2744 8.4821C40.5315 12.046 38.8301 15.1243 37.9233 18.165C37.2243 20.2121 37.0118 23.223 38.7179 25.0087C40.1685 26.525 42.0919 26.1965 43.4501 25.6514C46.393 24.2019 49.0381 21.0787 50.356 17.4849C50.6741 16.4166 51.027 14.9075 50.4794 13.7567ZM57.2466 2.49756C56.857 6.96547 53.3841 9.58813 52.5247 9.797C52.0039 9.90143 51.1154 9.67 51.9087 7.79494C53.0768 5.26937 55.0713 3.12531 57.2111 2.02693C57.2632 2.21376 57.2618 2.333 57.2466 2.49756ZM77.8479 3.06518C75.9797 4.12628 74.0431 4.81344 71.699 4.57445C71.0494 5.30684 70.4167 6.06137 69.8337 6.83827C73.1239 7.67509 76.612 5.81473 78.5574 4.0442C80.6154 2.25847 81.6706 0.00976562 81.6706 0.00976562C81.6706 0.00976562 80.128 1.77284 77.8479 3.06518ZM42.543 6.78579H40.0924L38.7102 9.03174H41.1602L42.543 6.78579Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M71.6895 23.536C71.426 23.7153 71.0558 23.5775 71.1942 23.1667C71.539 22.1207 72.9097 19.989 72.9097 19.989L76.7274 13.2179H74.1124C73.988 13.4221 73.7223 13.8909 73.7223 13.8909C73.6013 13.6894 73.2395 13.2413 73.0906 13.1444C72.4517 12.7407 71.5144 12.9316 70.8678 13.2975C68.0564 14.9415 66.0051 18.1894 64.3873 20.7223C64.3873 20.7223 62.6844 23.538 61.7391 23.7473C61.0011 23.8072 61.0773 22.813 61.1092 22.5814C61.3946 20.9075 62.0572 19.3163 62.7248 17.8743C64.0828 16.9329 65.6324 15.7002 67.0407 14.3479C70.097 11.4264 72.6736 8.11655 73.0502 7.37692C73.0502 7.37692 72.6426 7.4592 72.1612 7.47401C69.8099 10.7539 64.9983 15.5208 63.5396 16.2305C64.1858 14.676 68.361 7.25727 71.9139 3.70847L72.473 3.17036C73.3376 2.32609 74.2333 1.45946 74.9314 1.31745C75.0051 1.31 75.1001 1.31745 75.182 1.48957C75.2132 2.14692 74.9685 2.63266 74.6877 3.18547L74.2943 3.99248C74.2943 3.99248 74.8516 3.88784 75.2177 3.76799C75.6423 2.96894 76.1127 2.07209 75.9392 1.00394C75.8815 0.660205 75.6326 0.398756 75.3074 0.338932C74.2475 0.137205 73.0925 0.92145 72.163 1.55675L72.1255 1.579C67.3476 5.32218 63.3131 10.7165 59.7858 18.0834C59.5301 18.2773 58.5424 18.5092 58.3746 18.397C58.7229 17.6799 59.1615 16.7159 59.3809 15.6699C59.4189 15.3709 59.4542 15.0648 59.4542 14.766C59.4542 14.1229 59.2998 13.518 58.7238 13.0998C58.0484 12.7635 57.2136 12.9205 56.6507 13.1743C54.1294 14.2203 52.245 16.8056 50.8851 18.9347C50.1537 20.2873 49.4245 21.7361 49.2226 23.395C49.0803 24.6948 49.3699 25.5317 50.109 25.9502C50.8689 26.3384 51.8255 25.9349 52.2013 25.7408C54.7557 24.3959 56.5405 21.6989 57.9472 19.2333C58.0032 19.2259 58.7713 19.2037 59.3524 19.054C59.36 19.054 59.3633 19.054 59.3762 19.0618C59.3429 19.1735 59.0427 20.0703 59.0427 20.0703C58.151 22.685 57.7387 24.4634 58.5809 25.5167C59.7844 27.0036 61.777 25.4647 63.3979 23.4321C63.0499 25.8676 64.3122 26.2489 65.2745 26.0623C66.3798 25.7636 67.6115 24.5828 68.1831 23.9778C67.9995 24.6875 68.0493 25.9579 69.0549 26.0847C69.744 26.2121 70.2598 25.8372 70.8566 25.5158C72.9972 24.3502 75.5598 20.466 76.2251 19.343H75.3527C74.4069 20.7726 73.2034 22.6465 71.6895 23.536ZM52.4746 23.2759C52.3388 23.0741 52.2938 22.8535 52.2893 22.6151C52.2633 21.15 53.8395 18.5265 54.952 17.0973H54.9543C55.4205 18.1182 56.4763 18.7744 57.1136 19.051C56.3221 20.8143 53.6073 24.5908 52.4746 23.2759ZM57.5604 18.2626C57.4851 18.3153 56.1538 17.8667 55.8964 16.634C55.6781 15.5727 56.409 14.7434 57.116 14.3255C57.4195 14.0862 57.8767 14.0043 58.2121 14.1233C58.5233 14.3329 58.6077 14.7068 58.6077 15.1095C58.6077 15.3566 58.5749 15.6104 58.546 15.8419L58.5397 15.8944C58.3167 16.7227 57.9875 17.5187 57.5604 18.2626ZM68.2386 22.8053C68.2375 22.8053 67.9859 23.0293 67.9859 23.0293C67.6268 23.3505 67.2572 23.6941 66.8111 23.5222C66.6879 23.4775 66.6012 23.3133 66.5804 23.1858C66.5601 22.2668 66.9738 21.4153 67.3752 20.5861L67.4781 20.3693C68.6326 18.4418 69.9744 16.1705 71.9451 14.5943C72.2772 14.3547 72.6376 14.1534 73.018 14.3104C73.1055 14.3924 73.2073 14.5345 73.2073 14.6763C73.2073 14.7213 73.1673 14.8407 73.1444 14.878C72.5939 15.7675 72.0698 16.7012 71.56 17.5977C70.5639 19.3685 69.5304 21.1986 68.2386 22.8053Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+              <span class="brand-logo" aria-label="Bodyarmor Logo" role="img">
+                <svg width="112" height="16" viewBox="0 0 112 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.19979 15.9674V3.0088L0 2.24024L9.03768e-08 0.135742H6.99954C9.70948 0.135743 11.6211 1.67286 11.6211 4.38719C11.6211 5.85672 11.0652 7.05591 9.84382 7.82451C11.2212 8.66064 11.8434 9.81425 11.8434 11.4425C11.8434 14.4052 9.7326 15.9659 6.95474 15.9659H1.19979V15.9674ZM4.46562 6.5357H6.64284C7.75309 6.5357 8.35369 5.69956 8.35369 4.88542C8.35369 3.98169 7.70979 3.27914 6.68758 3.27914H4.46562V6.5357ZM8.57606 11.1266C8.57606 10.0406 7.77621 9.43078 6.75399 9.43078H4.46562V12.8005H6.79879C7.84262 12.8005 8.57606 12.1451 8.57606 11.1266Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M13.1294 10.1091V5.99289C13.1294 2.46442 15.2618 -1.46333e-07 18.5509 0C21.8399 1.46333e-07 23.9506 2.55558 23.9506 5.99289V10.1091C23.9506 13.6817 21.8182 16.1021 18.5509 16.1021C15.2835 16.1021 13.1294 13.6376 13.1294 10.1091ZM20.7064 9.974V6.12963C20.7064 4.50135 20.1506 3.14497 18.5509 3.14497C16.9511 3.14497 16.3736 4.45733 16.3736 6.12963V9.974C16.3736 11.6699 16.9295 12.9587 18.5509 12.9587C20.1722 12.9587 20.7064 11.6243 20.7064 9.974Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M25.9273 15.9674V3.00881L24.7275 2.24025V0.135742H31.1047C34.5049 0.135742 36.5262 2.66775 36.5262 6.12863V10.0406C36.5262 13.5234 34.4818 15.9659 31.1047 15.9659H25.9273V15.9674ZM33.282 9.83784V6.26537C33.282 4.59151 32.7492 3.28071 31.1047 3.28071H29.2163V12.802H31.1047C32.7492 12.802 33.282 11.5132 33.282 9.83937"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M37.7922 12.8916H39.48C40.6349 12.8916 41.1461 12.1686 40.7693 11.037L37.0371 0.135742L40.4589 0.135743L42.6809 6.67084L44.9678 0.135743H48.2568L43.7464 13.1164C42.9681 15.2429 42.4354 15.9659 40.2798 15.9659H37.7922V12.89V12.8916Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M55.011 15.9674L54.2775 13.7514H49.4784L48.7665 15.9674H45.4111L50.9005 0.135742L54.9229 0.135743V2.28426L53.9455 2.91765L58.4559 15.9659H55.0125L55.011 15.9674ZM51.8332 6.40054L50.3894 10.9914H53.3449L51.8332 6.40054Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M65.4973 0.135742C68.3419 0.135742 70.1188 2.17109 70.1188 4.975C70.1188 7.28224 68.8527 8.75177 67.6083 9.38517L71.1412 15.9659H67.497L64.2528 9.85984H62.8971V15.9659H59.6529V3.00881L58.4531 2.24025V0.135742H65.4973ZM66.8531 4.99857C66.8531 4.11685 66.3422 3.27914 65.187 3.27914H62.8986V6.82957H65.187C66.2754 6.82957 66.8531 5.92431 66.8531 4.99701"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M82.606 7.19264L80.0287 12.7329H78.4293L75.852 7.19264V15.9674H72.5627V3.00881L71.3628 2.24025V0.135742H75.852L79.229 7.37344L82.606 0.135742L85.8933 0.135743V15.9674H82.606V7.19264Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M87.7158 10.1092V5.99288C87.7158 2.46442 89.8484 -1.46333e-07 93.137 0C96.4263 1.46333e-07 98.5372 2.55558 98.5372 5.99288V10.1092C98.5372 13.6817 96.4047 16.1021 93.137 16.1021C89.87 16.1021 87.7158 13.6376 87.7158 10.1092ZM95.2925 9.974V6.12962C95.2925 4.50134 94.7371 3.14497 93.137 3.14497C91.5376 3.14497 90.9599 4.45734 90.9599 6.12962V9.974C90.9599 11.6699 91.516 12.9587 93.137 12.9587C94.7587 12.9587 95.2925 11.6243 95.2925 9.974Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M106.356 0.135743C109.201 0.135743 110.978 2.17109 110.978 4.97657C110.978 7.28384 109.712 8.75337 108.467 9.38677L112 15.9674H108.356L105.112 9.86144H103.756V15.9674H100.512V3.00881L99.312 2.24025V0.135742L106.356 0.135743ZM107.712 4.99858C107.712 4.11685 107.201 3.27914 106.046 3.27914H103.757V6.82957H106.046C107.134 6.82964 107.712 5.92431 107.712 4.99701"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+              <span class="brand-logo" aria-label="WKNDHRS logo" role="img">
+                <svg width="115" height="14" viewBox="0 0 115 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.3459 10.6478C15.3459 10.6606 15.3307 10.6927 15.27 10.6927C15.2093 10.6927 15.2017 10.6542 15.2017 10.6414L14.959 9.61383L12.4557 0.289062H8.98902L6.35679 10.7056C6.35679 10.7184 6.34162 10.7505 6.28852 10.757C6.23542 10.757 6.22025 10.7248 6.22025 10.712L2.82183 0.289062H0.0302734L4.60448 13.7111H7.94218L10.4 4.43769C10.4986 4.05237 10.582 3.66062 10.6579 3.2753C10.7489 3.64778 10.8475 4.03952 10.9537 4.43769L13.4115 13.7111H16.7492L21.3235 0.289062H18.6457L15.3459 10.6478Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M45.5452 9.13917C45.5452 9.2355 45.4617 9.26761 45.4314 9.27403C45.3934 9.28688 45.31 9.29972 45.2417 9.22266L37.2312 0.289626H35.1299H34.9403H31.7618L25.9967 5.36944C25.6022 5.71623 25.094 5.71623 24.745 5.59421C24.3961 5.47862 24.032 5.17678 24.032 4.69513V0.283203H21.377V13.7052H24.032V10.2181C24.032 9.94835 24.1609 9.69147 24.3961 9.51165L26.1636 8.11165C26.4139 7.91899 26.7477 7.82266 27.0814 7.86119C27.4152 7.8933 27.7186 8.05385 27.9007 8.29789L32.0425 13.7116H34.9327H35.1982H37.4512V4.70155C37.4512 4.60522 37.5346 4.57311 37.5649 4.56669C37.5953 4.56027 37.6863 4.541 37.7546 4.61807L45.7727 13.6282L45.8562 13.7181H48.0636V0.296048H45.5452V9.13917ZM34.9327 13.3649L29.5089 6.35843C29.213 5.97953 29.2661 5.49146 29.6378 5.16394L34.9327 0.456598V13.3649Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M55.6564 0.289062H49.7168V13.7111H55.6564C58.1749 13.7111 60.1396 13.1524 61.5126 12.0542C62.8857 10.9496 63.5836 9.24778 63.5836 7.00649C63.5836 4.75879 62.8857 3.06337 61.5126 1.95879C60.1472 0.847778 58.1749 0.289062 55.6564 0.289062ZM60.8679 7.00007V7.0386C60.8527 8.70833 60.4051 9.91567 59.5328 10.6221C58.6604 11.3349 57.3556 11.6946 55.664 11.6946H53.4642C52.8649 11.6946 52.3794 11.2836 52.3794 10.7762V3.23035C52.3794 2.72301 52.8649 2.312 53.4642 2.312H55.664C57.3708 2.312 58.6832 2.67805 59.5555 3.3909C60.4203 4.10374 60.8679 5.3175 60.8679 7.00007Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M74.9779 5.19549C74.9779 5.55512 74.6289 5.85053 74.2041 5.85053H67.9307C67.5059 5.85053 67.157 5.55512 67.157 5.19549V0.289062H64.502V13.7111H67.157V8.52209C67.157 8.16246 67.5059 7.86704 67.9307 7.86704H74.2041C74.6289 7.86704 74.9779 8.16246 74.9779 8.52209V13.7111H77.6328V0.289062H74.9779V5.19549Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M91.7571 6.6142C92.2805 5.93987 92.546 5.12428 92.546 4.20593C92.546 3.02428 92.1061 2.0674 91.2337 1.36098C90.3689 0.654558 89.1173 0.294922 87.5243 0.294922H79.2861V13.717H81.9411V9.36282C81.9411 8.81695 82.4646 8.36741 83.1169 8.36741H86.4395C86.8795 8.36741 87.2739 8.57291 87.4787 8.90044L90.4751 13.7234H93.4412L89.8455 7.99493C90.642 7.68668 91.2868 7.22429 91.7571 6.6142ZM89.8758 4.21878C89.8758 4.89309 89.6634 5.40685 89.2159 5.77932C88.7759 6.1518 88.1842 6.33804 87.4181 6.33804H83.1169C82.4721 6.33804 81.9411 5.89493 81.9411 5.34263V3.30042C81.9411 2.75455 82.4646 2.30501 83.1169 2.30501H87.4181C88.2373 2.30501 88.8594 2.47199 89.269 2.79951C89.6786 3.13346 89.8758 3.59584 89.8758 4.21878Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M105.715 7.68698C105.146 7.17964 104.441 6.7879 103.629 6.5246C102.84 6.26771 101.816 6.00441 100.572 5.7411C99.5859 5.52918 98.8122 5.33652 98.266 5.16954C97.7426 5.00899 97.295 4.79707 96.9461 4.54019C96.6275 4.30899 96.4682 4.00716 96.4682 3.63468C96.4682 3.1145 96.764 2.7356 97.3861 2.4723C98.0536 2.18973 98.9639 2.04202 100.094 2.04202C101.141 2.04202 101.998 2.21542 102.643 2.55578C103.257 2.88331 103.553 3.31358 103.553 3.87872V4.38606H106.163V3.93652C106.163 2.62642 105.571 1.63743 104.41 0.995232C103.288 0.372297 101.809 0.0576172 100.026 0.0576172C98.2433 0.0576172 96.7489 0.365874 95.5958 0.982388C94.4049 1.61817 93.798 2.54936 93.798 3.76312C93.798 4.61083 94.0938 5.31083 94.6704 5.83743C95.2317 6.34477 95.922 6.73652 96.7109 6.9934C97.4771 7.24386 98.4936 7.50074 99.7301 7.76405C100.716 7.97597 101.505 8.16863 102.082 8.34203C102.635 8.509 103.091 8.73377 103.455 9.02276C103.788 9.29249 103.955 9.62001 103.955 10.0246C103.955 10.6411 103.629 11.0971 102.969 11.431C102.271 11.7778 101.232 11.9576 99.8894 11.9576C98.6984 11.9576 97.735 11.7714 97.0295 11.3989C96.3544 11.0457 96.0282 10.5319 96.0282 9.83836C96.0282 9.74845 96.0358 9.67138 96.0434 9.60717C96.0661 9.49157 96.0661 9.46588 96.0661 9.44019V9.21542H93.4491L93.4111 9.80625V9.81909C93.4111 11.2319 94.0483 12.2851 95.3 12.9595C96.5137 13.6081 98.0915 13.942 99.9956 13.942C101.991 13.942 103.599 13.6145 104.775 12.9595C105.988 12.2851 106.603 11.2062 106.603 9.74845C106.603 8.90716 106.299 8.21359 105.715 7.68698Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+              <span class="mono brand-more">+ Many more</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact section-light">
+        <div class="shell impact__inner">
+          <div class="impact__image" data-reveal>
+            <img
+              src="https://cdn.sanity.io/images/degpnzrx/production/c7863541ce386e0b47397f3f7aec355f0f0368c6-1600x2400.heif?rect=0,134,1600,2133&w=1440&h=1920&q=90&fit=crop&auto=format"
+              alt="Julian and Adrian standing and looking to the left"
+            />
+          </div>
+          <div class="impact__stats">
+            <article class="stat-card" data-reveal>
+              <span class="sr-only">$01B+ Combined client market cap</span>
+              <span class="stat-card__marker" aria-hidden="true"></span>
+              <div class="stat-card__value" aria-hidden="true">
+                <span class="stat-prefix">$</span>
+                <span class="rolling-number" data-value="01"></span>
+                <span class="stat-suffix">B+</span>
+              </div>
+              <div class="stat-card__caption mono" aria-hidden="true">
+                <div class="stat-card__caption-track">
+                  <span>Combined client market cap</span>
+                  <span>Combined client market cap</span>
+                </div>
+              </div>
+            </article>
+            <article class="stat-card" data-reveal>
+              <span class="sr-only">20M+ People reached by our work</span>
+              <span class="stat-card__marker" aria-hidden="true"></span>
+              <div class="stat-card__value" aria-hidden="true">
+                <span class="rolling-number" data-value="20"></span>
+                <span class="stat-suffix">M+</span>
+              </div>
+              <div class="stat-card__caption mono" aria-hidden="true">
+                <div class="stat-card__caption-track">
+                  <span>People reached by our work</span>
+                  <span>People reached by our work</span>
+                </div>
+              </div>
+            </article>
+            <article class="stat-card" data-reveal>
+              <span class="sr-only">40+ Projects shipped</span>
+              <span class="stat-card__marker" aria-hidden="true"></span>
+              <div class="stat-card__value" aria-hidden="true">
+                <span class="rolling-number" data-value="40"></span>
+                <span class="stat-suffix">+</span>
+              </div>
+              <div class="stat-card__caption mono" aria-hidden="true">
+                <div class="stat-card__caption-track">
+                  <span>Projects shipped</span>
+                  <span>Projects shipped</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section-light">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <div>
+              <h2>How it works</h2>
+              <p class="mono">// Process</p>
+            </div>
+          </div>
+
+          <div class="process__layout">
+            <div class="process__list" role="tablist" aria-label="Process steps">
+              <button class="process-step is-active" type="button" data-process-target="subscribe">
+                <span class="mono">01</span>
+                <span>
+                  <strong>Subscribe</strong>
+                  <small
+                    >Pick a plan that fits your workload and pay monthly, with no contracts and
+                    no minimum commitment. Pause or cancel to the next month whenever you need
+                    to.</small
+                  >
+                </span>
+              </button>
+              <button class="process-step" type="button" data-process-target="request">
+                <span class="mono">02</span>
+                <span>
+                  <strong>Request</strong>
+                  <small
+                    >Send your work through Slack, email, or wherever your team already
+                    communicates. We tackle one request at a time in the order you set.</small
+                  >
+                </span>
+              </button>
+              <button class="process-step" type="button" data-process-target="ship">
+                <span class="mono">03</span>
+                <span>
+                  <strong>Ship</strong>
+                  <small
+                    >You'll receive deliverables every 2-5 business days with unlimited
+                    revisions until you're happy.</small
+                  >
+                </span>
+              </button>
+              <button class="process-step" type="button" data-process-target="repeat">
+                <span class="mono">04</span>
+                <span>
+                  <strong>Repeat</strong>
+                  <small
+                    >Submit your next request and we keep going the same way. Your backlog
+                    shrinks and your product gets better, month after month.</small
+                  >
+                </span>
+              </button>
+            </div>
+
+            <div class="process__preview" data-reveal>
+              <span class="process__indicator" aria-hidden="true"></span>
+              <div class="process__track">
+                <div class="process-slide is-active" data-process-preview="subscribe">
+                  <img
+                    class="process-preview"
+                    src="https://cdn.sanity.io/images/degpnzrx/production/728234c6dbc099bb9ffd7ab8160a443b7ed9b239-1600x2400.heif?w=1440&h=2160&q=90&auto=format"
+                    alt="Pick a plan. Pay monthly. Cancel anytime."
+                  />
+                </div>
+                <div class="process-slide" data-process-preview="request">
+                  <img
+                    class="process-preview"
+                    src="https://cdn.sanity.io/images/degpnzrx/production/8c7de2558b412dbf660620894a264bfc0a21dd46-1600x2400.heif?w=1600&h=2400&q=90&auto=format"
+                    alt="Submit work via Slack. Or email. Or wherever you work. We tackle one request at a time, in your priority order."
+                  />
+                </div>
+                <div class="process-slide" data-process-preview="ship">
+                  <img
+                    class="process-preview"
+                    src="https://cdn.sanity.io/images/degpnzrx/production/dacef92f30d8e3ebe3c32ed098eb878f39e133ef-1600x2400.heif?w=1600&h=2400&q=90&auto=format"
+                    alt="Ship"
+                  />
+                </div>
+                <div class="process-slide" data-process-preview="repeat">
+                  <img
+                    class="process-preview"
+                    src="https://cdn.sanity.io/images/degpnzrx/production/b370e4f512a2d26bb53dd93bc1d84b473ffcb988-2400x1600.heif?w=2400&h=1600&q=90&auto=format"
+                    alt="Laptop and Magazine on the ground"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-mobile">
+            <article class="process-mobile__card" data-reveal>
+              <div class="process-mobile__copy">
+                <span class="mono">01</span>
+                <div>
+                  <h3>Subscribe</h3>
+                  <p>
+                    Pick a plan that fits your workload and pay monthly, with no contracts and no
+                    minimum commitment. Pause or cancel to the next month whenever you need to.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="https://cdn.sanity.io/images/degpnzrx/production/728234c6dbc099bb9ffd7ab8160a443b7ed9b239-1600x2400.heif?w=1440&h=2160&q=90&auto=format"
+                alt="Pick a plan. Pay monthly. Cancel anytime."
+              />
+            </article>
+            <article class="process-mobile__card" data-reveal>
+              <div class="process-mobile__copy">
+                <span class="mono">02</span>
+                <div>
+                  <h3>Request</h3>
+                  <p>
+                    Send your work through Slack, email, or wherever your team already
+                    communicates. We tackle one request at a time in the order you set.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="https://cdn.sanity.io/images/degpnzrx/production/8c7de2558b412dbf660620894a264bfc0a21dd46-1600x2400.heif?w=1600&h=2400&q=90&auto=format"
+                alt="Submit work via Slack. Or email. Or wherever you work. We tackle one request at a time, in your priority order."
+              />
+            </article>
+            <article class="process-mobile__card" data-reveal>
+              <div class="process-mobile__copy">
+                <span class="mono">03</span>
+                <div>
+                  <h3>Ship</h3>
+                  <p>
+                    You'll receive deliverables every 2-5 business days with unlimited revisions
+                    until you're happy.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="https://cdn.sanity.io/images/degpnzrx/production/dacef92f30d8e3ebe3c32ed098eb878f39e133ef-1600x2400.heif?w=1600&h=2400&q=90&auto=format"
+                alt="Ship"
+              />
+            </article>
+            <article class="process-mobile__card" data-reveal>
+              <div class="process-mobile__copy">
+                <span class="mono">04</span>
+                <div>
+                  <h3>Repeat</h3>
+                  <p>
+                    Submit your next request and we keep going the same way. Your backlog shrinks
+                    and your product gets better, month after month.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="https://cdn.sanity.io/images/degpnzrx/production/b370e4f512a2d26bb53dd93bc1d84b473ffcb988-2400x1600.heif?w=2400&h=1600&q=90&auto=format"
+                alt="Laptop and Magazine on the ground"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured section-dark" id="featured">
+        <div class="shell">
+          <div class="section-head featured__head" data-reveal>
+            <div>
+              <h2>
+                <span>Featured</span>
+                <span>Work</span>
+              </h2>
+              <p>
+                We build websites where every scroll, every transition, and every interaction
+                feels intentional. The details most teams skip are the details we care about most.
+              </p>
+            </div>
+
+            <div class="featured__tools">
+              <nav class="featured-nav" aria-label="Featured projects">
+                <button class="featured-nav__button is-active" type="button" data-project="bodyarmor">
+                  <img
+                    src="https://cdn.sanity.io/images/degpnzrx/production/08e554af79798c7ce09316be88c0d296ace9ce4a-2250x1500.jpg?w=2250&h=1500&q=90&auto=format"
+                    alt="BodyArmor"
+                  />
+                </button>
+                <button class="featured-nav__button" type="button" data-project="annnimate">
+                  <img
+                    src="https://cdn.sanity.io/images/degpnzrx/production/4a67c5fddb677d52f4c76ec3e7a52d2861adc898-3462x2550.jpg?w=3462&h=2550&q=90&auto=format"
+                    alt="Annnimate"
+                  />
+                </button>
+                <button class="featured-nav__button" type="button" data-project="wkndhrs">
+                  <img
+                    src="https://cdn.sanity.io/images/degpnzrx/production/5d302071b3ef530f3de3528f9f1d3a9678e0643c-3000x2250.jpg?w=1440&h=1080&q=90&auto=format"
+                    alt="WKNDHRS"
+                  />
+                </button>
+                <button class="featured-nav__button" type="button" data-project="fitgreenmind">
+                  <img
+                    src="https://cdn.sanity.io/images/degpnzrx/production/aaf4d81f4ba2322d94bfd8a2f87981244ade97c1-3000x2250.jpg?w=3000&h=2250&q=90&auto=format"
+                    alt="Fitgreenmind"
+                  />
+                </button>
+              </nav>
+              <a class="cta cta--mono cta--ghost" href="#work-grid">
+                <span class="cta__label">
+                  <span>View all</span>
+                  <span>VIEW ALL</span>
+                </span>
+                <svg class="cta__icon" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path
+                    d="M6 1v10M1 6h10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="square"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="featured-grid" id="work-grid">
+            <article class="featured-card is-active" data-project-card="bodyarmor" data-reveal>
+              <a href="#contact" class="featured-card__image">
+                <img
+                  src="https://cdn.sanity.io/images/degpnzrx/production/08e554af79798c7ce09316be88c0d296ace9ce4a-2250x1500.jpg?w=1440&h=960&q=90&fit=crop&auto=format"
+                  alt="Laptop, tablet, and smartphone displaying the Bodyarmor Strawberry Banana product page in a clean, responsive mockup layout"
+                />
+              </a>
+              <div class="featured-card__meta">
+                <h3>BodyArmor</h3>
+                <p class="mono">[Marketing Site] — [Sports]</p>
+              </div>
+            </article>
+
+            <article class="featured-card" data-project-card="annnimate" data-reveal>
+              <a href="#contact" class="featured-card__image">
+                <img
+                  src="https://cdn.sanity.io/images/degpnzrx/production/4a67c5fddb677d52f4c76ec3e7a52d2861adc898-3462x2550.jpg?w=3462&h=2550&q=90&fit=crop&auto=format"
+                  alt="Two silhouetted people viewing the Annnimate website on a large desktop screen displaying an animation library and headline text"
+                />
+              </a>
+              <div class="featured-card__meta">
+                <h3>Annnimate</h3>
+                <p class="mono">[Web App] — [SaaS] — [Animations]</p>
+              </div>
+            </article>
+
+            <article class="featured-card" data-project-card="wkndhrs" data-reveal>
+              <a href="#contact" class="featured-card__image">
+                <img
+                  src="https://cdn.sanity.io/images/degpnzrx/production/5d302071b3ef530f3de3528f9f1d3a9678e0643c-3000x2250.jpg?w=3000&h=2250&q=90&fit=crop&auto=format"
+                  alt="WKNDHRS website displayed across laptop and mobile, highlighting creative services for AI, AR, music, and new digital experiences in a minimalist interface"
+                />
+              </a>
+              <div class="featured-card__meta">
+                <h3>WKNDHRS</h3>
+                <p class="mono">[Agency Website] — [Portfolio] — [Animations]</p>
+              </div>
+            </article>
+
+            <article class="featured-card" data-project-card="fitgreenmind" data-reveal>
+              <a href="#contact" class="featured-card__image">
+                <img
+                  src="https://cdn.sanity.io/images/degpnzrx/production/aaf4d81f4ba2322d94bfd8a2f87981244ade97c1-3000x2250.jpg?w=3000&h=2250&q=90&fit=crop&auto=format"
+                  alt="Laptop on a wooden desk displaying the Fit Green Mind logo on a green screen, styled with plants and minimalist decor"
+                />
+              </a>
+              <div class="featured-card__meta">
+                <h3>Fitgreenmind</h3>
+                <p class="mono">[Marketing Site] — [Animations]</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="capabilities section-light">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <div>
+              <h2>
+                <span>Everything frontend.</span>
+                <span>One subscription.</span>
+              </h2>
+              <p class="mono">// What's included</p>
+            </div>
+            <p class="mono">What every subscription includes</p>
+          </div>
+
+          <div class="capability-list">
+            <article class="capability-item" data-reveal>
+              <h3>Frontend Development</h3>
+              <p>
+                Websites, web apps, landing pages built with clean, maintainable code.
+                Optimized for performance, SEO, and Core Web Vitals from day one.
+              </p>
+            </article>
+            <article class="capability-item" data-reveal>
+              <h3>Animation + Interaction</h3>
+              <p>
+                Scroll-triggered animations, page transitions, hover states, micro-interactions.
+                All GPU-accelerated, all buttery smooth at 60fps.
+              </p>
+            </article>
+            <article class="capability-item" data-reveal>
+              <h3>Design Implementation</h3>
+              <p>
+                Pixel-perfect builds from Figma, or whatever you use. Responsive down to the last
+                breakpoint, exactly as your designer intended.
+              </p>
+            </article>
+            <article class="capability-item" data-reveal>
+              <h3>Tech Stack</h3>
+              <p>
+                React, Next.js, Vue, Nuxt, Webflow, GSAP, Framer Motion, Tailwind. We match the
+                tools to your project and integrate with your existing codebase.
+              </p>
+            </article>
+            <article class="capability-item" data-reveal>
+              <h3>Unlimited Revisions</h3>
+              <p>
+                Iterate until it's right. No revision caps, no extra charges, no awkward scope
+                conversations.
+              </p>
+            </article>
+            <article class="capability-item" data-reveal>
+              <h3>Direct Access</h3>
+              <p>
+                We work in your Slack, your Linear, your Notion. You talk to the developers, not
+                an account manager.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="comparison section-light">
+        <div class="shell">
+          <div class="section-head comparison__head" data-reveal>
+            <div>
+              <h2>
+                <span>Why Good</span>
+                <span>Fella?</span>
+              </h2>
+              <p>
+                Good Fella combines the quality of a senior development team with the flexibility
+                of a subscription you can pause or cancel to the next month.
+              </p>
+            </div>
+            <a class="cta cta--mono cta--ghost cta--dark" href="#pricing">
+              <span class="cta__label">
+                <span>See how it works</span>
+                <span>SEE HOW IT WORKS</span>
+              </span>
+              <svg class="cta__icon" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path
+                  d="M6 1v10M1 6h10"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="square"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="comparison-table" data-reveal>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Traditional Agency</th>
+                  <th>Freelancer</th>
+                  <th>Good fella</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Who does the work</td>
+                  <td>Varies by project</td>
+                  <td>One person</td>
+                  <td>Frontend veterans</td>
+                </tr>
+                <tr>
+                  <td>Pricing model</td>
+                  <td>Hourly or project-based</td>
+                  <td>Per project</td>
+                  <td>One monthly fee</td>
+                </tr>
+                <tr>
+                  <td>Communication</td>
+                  <td>Through account manager</td>
+                  <td>Direct email</td>
+                  <td>In your Slack</td>
+                </tr>
+                <tr>
+                  <td>Turnaround</td>
+                  <td>Varies by workload</td>
+                  <td>Depends on availability</td>
+                  <td>2-5 business days</td>
+                </tr>
+                <tr>
+                  <td>Relationship</td>
+                  <td>Project-based</td>
+                  <td>Project-based</td>
+                  <td>Ongoing partnership</td>
+                </tr>
+                <tr>
+                  <td>Commitment</td>
+                  <td>Contract-based</td>
+                  <td>Per project</td>
+                  <td>Cancel to the next month</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="comparison-mobile">
+            <article class="comparison-mobile__item" data-reveal>
+              <p class="mono">Who does the work</p>
+              <div>
+                <span>Traditional Agency</span>
+                <strong>Varies by project</strong>
+              </div>
+              <div>
+                <span>Freelancer</span>
+                <strong>One person</strong>
+              </div>
+              <div>
+                <span>Good fella</span>
+                <strong>Frontend veterans</strong>
+              </div>
+            </article>
+            <article class="comparison-mobile__item" data-reveal>
+              <p class="mono">Pricing model</p>
+              <div>
+                <span>Traditional Agency</span>
+                <strong>Hourly or project-based</strong>
+              </div>
+              <div>
+                <span>Freelancer</span>
+                <strong>Per project</strong>
+              </div>
+              <div>
+                <span>Good fella</span>
+                <strong>One monthly fee</strong>
+              </div>
+            </article>
+            <article class="comparison-mobile__item" data-reveal>
+              <p class="mono">Communication</p>
+              <div>
+                <span>Traditional Agency</span>
+                <strong>Through account manager</strong>
+              </div>
+              <div>
+                <span>Freelancer</span>
+                <strong>Direct email</strong>
+              </div>
+              <div>
+                <span>Good fella</span>
+                <strong>In your Slack</strong>
+              </div>
+            </article>
+            <article class="comparison-mobile__item" data-reveal>
+              <p class="mono">Turnaround</p>
+              <div>
+                <span>Traditional Agency</span>
+                <strong>Varies by workload</strong>
+              </div>
+              <div>
+                <span>Freelancer</span>
+                <strong>Depends on availability</strong>
+              </div>
+              <div>
+                <span>Good fella</span>
+                <strong>2-5 business days</strong>
+              </div>
+            </article>
+            <article class="comparison-mobile__item" data-reveal>
+              <p class="mono">Relationship</p>
+              <div>
+                <span>Traditional Agency</span>
+                <strong>Project-based</strong>
+              </div>
+              <div>
+                <span>Freelancer</span>
+                <strong>Project-based</strong>
+              </div>
+              <div>
+                <span>Good fella</span>
+                <strong>Ongoing partnership</strong>
+              </div>
+            </article>
+            <article class="comparison-mobile__item" data-reveal>
+              <p class="mono">Commitment</p>
+              <div>
+                <span>Traditional Agency</span>
+                <strong>Contract-based</strong>
+              </div>
+              <div>
+                <span>Freelancer</span>
+                <strong>Per project</strong>
+              </div>
+              <div>
+                <span>Good fella</span>
+                <strong>Cancel to the next month</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing section-light" id="pricing">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <div>
+              <h2>Simple, transparent pricing.</h2>
+              <p class="mono">// Pricing</p>
+            </div>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card" data-reveal>
+              <p class="mono pricing-card__tag">ACTIVE</p>
+              <div class="pricing-card__price">
+                <strong>€10,000</strong>
+                <span>/ month</span>
+              </div>
+              <ul>
+                <li>One request at a time</li>
+                <li>2-5 day turnaround</li>
+                <li>Unlimited revisions</li>
+                <li>Direct Slack access</li>
+                <li>Pause or cancel to the next month</li>
+              </ul>
+              <div class="pricing-card__footer">
+                <div>
+                  <p class="mono">ONGOING WORK</p>
+                  <p class="mono">Only 3 spots left</p>
+                </div>
+                <a class="cta cta--mono cta--ghost cta--dark" href="#contact">
+                  <span class="cta__label">
+                    <span>Get started</span>
+                    <span>GET STARTED</span>
+                  </span>
+                  <svg class="cta__icon" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path
+                      d="M6 1v10M1 6h10"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="square"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="pricing-card" data-reveal>
+              <p class="mono pricing-card__tag">EMBEDDED</p>
+              <div class="pricing-card__price">
+                <strong>€20,000</strong>
+                <span>/ month</span>
+              </div>
+              <ul>
+                <li>Priority turnaround, 1-3 days</li>
+                <li>Two requests at a time</li>
+                <li>Near full-time availability</li>
+                <li>Everything in Active</li>
+                <li>For heavy build phases</li>
+              </ul>
+              <div class="pricing-card__footer">
+                <div>
+                  <p class="mono">FULL CAPACITY</p>
+                  <p class="mono">Only 3 spots left</p>
+                </div>
+                <a class="cta cta--mono cta--ghost cta--dark" href="#contact">
+                  <span class="cta__label">
+                    <span>Get started</span>
+                    <span>GET STARTED</span>
+                  </span>
+                  <svg class="cta__icon" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path
+                      d="M6 1v10M1 6h10"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="square"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <p class="pricing__note mono" data-reveal>
+            Need a defined project? Good Fella also builds fixed-scope frontend projects
+            starting from €25,000.
+          </p>
+        </div>
+      </section>
+
+      <section class="faq section-dark">
+        <div class="shell">
+          <div class="section-head" data-reveal>
+            <div>
+              <h2>
+                <span>Common</span>
+                <span>questions</span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item" data-reveal>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What can I send you?</span>
+                <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 1V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                  <path d="M1 8H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Anything frontend. Landing pages, website sections, full builds, animations,
+                  interactions, bug fixes, Webflow work, React components. If users see it and
+                  interact with it, we build it.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item" data-reveal>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How fast will I get my work?</span>
+                <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 1V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                  <path d="M1 8H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Most requests ship in 2-5 business days. Bigger things like full websites take
+                  2-4 weeks. We always give you a realistic timeline before we start so nothing
+                  comes as a surprise.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item" data-reveal>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Who will I work with?</span>
+                <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 1V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                  <path d="M1 8H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Julian and Adrian. We're brothers and co-founders. The people you talk to are
+                  the people writing the code. As we grow, every team member meets the same
+                  standard: senior developers who care about the details.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item" data-reveal>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can I pause or cancel?</span>
+                <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 1V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                  <path d="M1 8H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Pause or cancel to the next month. Days don't carry over, so you're never
+                  paying for time you're not using. No penalties, no questions.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item" data-reveal>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What's not included?</span>
+                <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 1V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                  <path d="M1 8H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We don't do visual design from scratch: no branding, UI design, or creative
+                  direction. We take designs from Figma or any other tool and turn them into
+                  production code. If you need design work, we know people we'd recommend.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item" data-reveal>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What if I'm not happy with the work?</span>
+                <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 1V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                  <path d="M1 8H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Unlimited revisions on everything. We keep going until you say it's right. No
+                  extra charge, no attitude.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-light" id="contact">
+        <div class="shell contact__inner">
+          <div class="contact__visual" data-reveal>
+            <h2>Start a project.</h2>
+            <img
+              src="https://cdn.sanity.io/images/degpnzrx/production/c6b897f2873c4b8c2d6f395cf6a5e0e5ed49d9ef-1600x2400.heif?rect=129,55,1343,2014&w=1600&h=2400&q=90&fit=crop&auto=format"
+              alt="Adrian and Julian dressed in black sitting on the floor against a white wall in a minimalist studio setting"
+            />
+          </div>
+
+          <div class="contact__copy" data-reveal>
+            <h3>Book a 15-minute call or send us a message. No preparation needed.</h3>
+            <div class="contact__meta">
+              <p class="mono">contact@good-fella.com</p>
+              <p class="mono">Working with teams worldwide.</p>
+            </div>
+            <div class="contact__actions">
+              <a class="text-link text-link--dark" href="mailto:contact@good-fella.com">Get Started</a>
+              <a class="cta cta--mono cta--ghost cta--dark" href="mailto:contact@good-fella.com">
+                <span class="cta__label">
+                  <span>Book a 15-min call</span>
+                  <span>BOOK A 15-MIN CALL</span>
+                </span>
+                <svg class="cta__icon" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path
+                    d="M6 1v10M1 6h10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="square"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="contact__signoff">Let the Fellas handle it.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-dark">
+      <div class="shell site-footer__inner">
+        <div class="footer-newsletter" data-reveal>
+          <div>
+            <p>Don't miss out on future updates.</p>
+            <form class="newsletter-form">
+              <input type="text" name="name" placeholder="Name" aria-label="Name" />
+              <input type="email" name="email" placeholder="Email" aria-label="Email" />
+              <button class="cta cta--mono cta--ghost" type="button">
+                <span class="cta__label">
+                  <span>Subscribe</span>
+                  <span>SUBSCRIBE</span>
+                </span>
+                <svg class="cta__icon" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path
+                    d="M6 1v10M1 6h10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="square"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+            <p class="mono footer-note">Unsubscribe anytime.</p>
+          </div>
+          <div class="footer-waitlist">
+            <p class="mono">Accepting Projects. Join the waitlist.</p>
+            <p class="mono">Only 3 spots left</p>
+          </div>
+        </div>
+
+        <div class="footer-nav" data-reveal>
+          <a href="#top"><span>Home</span><span>Home</span></a>
+          <a href="#featured"><span>Work</span><span>Work</span></a>
+          <a href="#pricing"><span>Pricing</span><span>Pricing</span></a>
+          <a href="#contact"><span>About</span><span>About</span></a>
+          <a href="#contact"><span>Contact</span><span>Contact</span></a>
+        </div>
+
+        <div class="footer-meta" data-reveal>
+          <div class="footer-links">
+            <a href="mailto:contact@good-fella.com">contact@good-fella.com</a>
+            <a href="mailto:julian@good-fella.com">julian@good-fella.com</a>
+            <a href="mailto:adrian@good-fella.com">adrian@good-fella.com</a>
+          </div>
+          <div class="footer-links">
+            <a href="#top">Privacy Policy</a>
+            <a href="#top">Legal Notice</a>
+          </div>
+          <div class="footer-utils">
+            <button class="utility-button mono" id="gridToggle" type="button" aria-pressed="false">
+              <span>⌘G</span>
+              <span>grid</span>
+            </button>
+            <button class="utility-button mono" id="colorToggle" type="button" aria-pressed="false">
+              <span>C</span>
+              <span>change color</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-bottom" data-reveal>
+          <p>© 2026</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
