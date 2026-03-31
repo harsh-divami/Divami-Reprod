@@ -101,60 +101,161 @@ function initObservers() {
 }
 
 function initProcess() {
-  const steps = qsa(".process-step");
-  const previewFrame = qs(".process__preview");
+  const section = qs(".process");
+  const list = section ? qs(".process__list", section) : null;
+  const steps = list ? qsa(".process-step", list) : [];
+  const previewFrame = section ? qs(".process__preview", section) : null;
   const track = previewFrame ? qs(".process__track", previewFrame) : null;
-  const indicator = previewFrame ? qs(".process__indicator", previewFrame) : null;
+  const indicator = list ? qs(".process__indicator", list) : null;
   const slides = previewFrame ? qsa(".process-slide", previewFrame) : [];
+  const desktopMedia = window.matchMedia("(min-width: 961px)");
 
-  if (!steps.length || !previewFrame || !track || !indicator || !slides.length) {
+  if (!section || !list || !steps.length || !previewFrame || !track || !indicator || !slides.length) {
     return;
   }
 
-  let activeName = steps.find((step) => step.classList.contains("is-active"))?.dataset.processTarget;
+  let activeIndex = Math.max(
+    steps.findIndex((step) => step.classList.contains("is-active")),
+    0
+  );
+  let rotationTurns = 0;
+  let frameHandle = null;
+
+  const getMaxIndex = () => Math.max(steps.length - 1, 0);
 
   const syncPreviewMotion = (index) => {
     const frameHeight = previewFrame.clientHeight;
-    const styles = window.getComputedStyle(previewFrame);
-    const indicatorSize = Number.parseFloat(styles.getPropertyValue("--process-indicator-size")) || 48;
-    const indicatorInset = Number.parseFloat(styles.getPropertyValue("--process-indicator-offset")) || 24;
-    const availableTravel = Math.max(frameHeight - indicatorSize - indicatorInset * 2, 0);
-    const progress = slides.length > 1 ? index / (slides.length - 1) : 0;
-
     track.style.transform = `translateY(-${index * frameHeight}px)`;
-    indicator.style.transform = `translateY(${availableTravel * progress}px)`;
   };
 
-  const setActive = (name) => {
-    activeName = name;
+  const syncIndicator = (index, rotateSquare) => {
+    const firstStep = steps[0];
+    const currentStep = steps[index];
 
-    steps.forEach((step) => {
-      step.classList.toggle("is-active", step.dataset.processTarget === name);
-    });
-
-    slides.forEach((slide, index) => {
-      const isActive = slide.dataset.processPreview === name;
-      slide.classList.toggle("is-active", isActive);
-
-      if (isActive) {
-        syncPreviewMotion(index);
-      }
-    });
-  };
-
-  steps.forEach((step) => {
-    const name = step.dataset.processTarget;
-    step.addEventListener("mouseenter", () => setActive(name));
-    step.addEventListener("focus", () => setActive(name));
-    step.addEventListener("click", () => setActive(name));
-  });
-
-  setActive(activeName ?? steps[0]?.dataset.processTarget);
-  window.addEventListener("resize", () => {
-    if (activeName) {
-      setActive(activeName);
+    if (!firstStep || !currentStep) {
+      return;
     }
+
+    if (rotateSquare) {
+      rotationTurns += 1;
+    }
+
+    indicator.style.setProperty(
+      "--process-indicator-y",
+      `${currentStep.offsetTop - firstStep.offsetTop}px`
+    );
+    indicator.style.setProperty("--process-indicator-rotate", `${rotationTurns * 90}deg`);
+  };
+
+  const setActiveIndex = (index, options = {}) => {
+    const nextIndex = Math.min(Math.max(index, 0), getMaxIndex());
+    const changed = nextIndex !== activeIndex;
+
+    activeIndex = nextIndex;
+
+    steps.forEach((step, stepIndex) => {
+      step.classList.toggle("is-active", stepIndex === nextIndex);
+    });
+
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("is-active", slideIndex === nextIndex);
+    });
+
+    syncPreviewMotion(nextIndex);
+    syncIndicator(nextIndex, changed && options.rotate !== false);
+  };
+
+  const getSectionProgress = () => {
+    const rect = section.getBoundingClientRect();
+    const scrollableDistance = Math.max(section.offsetHeight - window.innerHeight, 1);
+    const traveled = Math.min(Math.max(-rect.top, 0), scrollableDistance);
+
+    return traveled / scrollableDistance;
+  };
+
+  const getIndexFromProgress = (progress) => {
+    const maxIndex = getMaxIndex();
+
+    if (maxIndex === 0 || progress < 1 / 6) {
+      return 0;
+    }
+
+    const segmentProgress = (progress - 1 / 6) / (5 / 6);
+    return Math.min(Math.floor(segmentProgress * maxIndex) + 1, maxIndex);
+  };
+
+  const getClickProgress = (index) => {
+    const maxIndex = getMaxIndex();
+
+    if (index <= 0 || maxIndex === 0) {
+      return 1 / 12;
+    }
+
+    return 1 / 6 + ((5 / 6) / maxIndex) * (index - 0.5);
+  };
+
+  const syncFromScroll = () => {
+    if (!desktopMedia.matches) {
+      return;
+    }
+
+    setActiveIndex(getIndexFromProgress(getSectionProgress()));
+  };
+
+  const requestScrollSync = () => {
+    if (frameHandle) {
+      return;
+    }
+
+    frameHandle = window.requestAnimationFrame(() => {
+      frameHandle = null;
+      syncFromScroll();
+    });
+  };
+
+  const scrollToIndex = (index) => {
+    if (!desktopMedia.matches) {
+      setActiveIndex(index, { rotate: false });
+      return;
+    }
+
+    const sectionTop = window.scrollY + section.getBoundingClientRect().top;
+    const scrollableDistance = Math.max(section.offsetHeight - window.innerHeight, 1);
+    const targetProgress = getClickProgress(index);
+
+    window.scrollTo({
+      top: sectionTop + scrollableDistance * targetProgress,
+      behavior: "smooth",
+    });
+  };
+
+  steps.forEach((step, index) => {
+    step.addEventListener("click", () => scrollToIndex(index));
   });
+
+  const handleResize = () => {
+    if (!desktopMedia.matches) {
+      track.style.removeProperty("transform");
+      indicator.style.removeProperty("--process-indicator-y");
+      indicator.style.removeProperty("--process-indicator-rotate");
+      return;
+    }
+
+    setActiveIndex(activeIndex, { rotate: false });
+    syncFromScroll();
+  };
+
+  setActiveIndex(activeIndex, { rotate: false });
+  handleResize();
+
+  window.addEventListener("scroll", requestScrollSync, { passive: true });
+  window.addEventListener("resize", handleResize);
+
+  if (desktopMedia.addEventListener) {
+    desktopMedia.addEventListener("change", handleResize);
+  } else {
+    desktopMedia.addListener(handleResize);
+  }
 }
 
 function initFeatured() {

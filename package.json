@@ -1,8 +1,11 @@
 {
-  "name": "good-fella-home-replica",
+  "name": "divami-home-reprod",
   "private": true,
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0"
   }
 }
